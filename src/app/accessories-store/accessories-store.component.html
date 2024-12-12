@@ -1,0 +1,5 @@
+<div class="links"><app-navbar></app-navbar></div>
+<div class="row">
+    <div class="col-2 myCol" *ngFor="let accessory of accessories ; let i = index" [ngClass]="{'no-hover' : isAccessoryOpen(i)}">
+        <img [src]="accessory.imgurl" class="enlarge-img" (click)="accessoriesModal(accessory.imgurl, accessory.name, accessory.color, accessory.price, i)">
+    </div>

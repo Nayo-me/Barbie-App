@@ -1,0 +1,40 @@
+* {
+    margin: 10px;
+    background-color: rgb(247, 220, 222);
+}
+
+.links {
+    text-align: end;
+}
+
+.myCol {
+    text-align: center;
+    background-color: pink;
+    border: solid;
+    border-color: white;
+    align-items: center;
+    display: inherit;
+    /* Set it to block or inline-block to enable scaling */
+    transition: transform 0.3s;
+    /* Add a smooth transition */
+}
+
+img {
+    width: 85%;
+    align-content: space-around;
+    max-height: min-content;
+}
+
+.myCol .enlarge-img {
+    transition: transform 0.3s;
+}
+
+.myCol :hover {
+    transform: scale(2);
+    cursor: pointer;
+}
+
+.row {
+    color: deeppink;
+    justify-content: center;
+}

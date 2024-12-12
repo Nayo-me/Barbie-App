@@ -1,0 +1,32 @@
+* {
+    margin: 10px;
+    background-color: rgb(247, 220, 222);
+}
+
+.links {
+    text-align: end;
+}
+
+.btns {
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.shop {
+    font-size: 20px;
+    padding: 18px 24px;
+    border-radius: 8px;
+    background-color: palevioletred;
+    font-weight: bold;
+    color: white;
+    border: white;
+    width: 200px;
+    height: 200px;
+}
+
+.shop:hover {
+    background-color: deeppink;
+}

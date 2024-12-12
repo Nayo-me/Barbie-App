@@ -1,0 +1,23 @@
+<div class="links"><app-navbar></app-navbar></div>
+<div class="description">
+    <p>
+        Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie
+        Land.
+        However, when they get a chance to go to the real world, they soon discover the joys and perils of living among humans.
+    </p>
+</div>
+<div class="row">
+    <div class="col-2 myCol" *ngFor="let pic of pictures">
+        <img [src]="pic">
+    </div>
+    
+    <div class="quoteCls">        
+        <ul id="quotelist">
+            <li *ngFor="let quote of quotes">{{quote}}</li>
+        </ul>
+        <div class="btnBar starry-night" >
+            <input type="text" class="inputQuote" placeholder="  Add Your Thoughts.." [(ngModel)]="newQuote">
+        <button class="btnQuote" (click)="addQuoteToList()">ADD</button> 
+        </div>
+    </div>
+</div>

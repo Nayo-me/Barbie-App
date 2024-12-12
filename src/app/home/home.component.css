@@ -1,0 +1,139 @@
+/* * {
+    margin: 10px;
+    background-color: rgb(247, 220, 222);
+}
+
+.links {
+    text-align: end;
+}
+
+.myCol {
+    text-align: center;
+    background-color: pink;
+    border: solid;
+    border-color: white;
+    display: inherit;
+    align-items: center;
+}
+
+p {
+    color: deeppink;
+    margin: 10px;
+    font-size: 18px;
+}
+
+img {
+    width: 85%;
+    align-content: space-around;
+    max-height: max-content;
+}
+
+.row {
+    color: deeppink;
+    justify-content: center;
+}
+
+.quoteCls {
+    margin: 0px;
+}
+
+.inputQuote {
+    width: 65%
+}
+
+.btnQuote{
+    justify-content: center;
+    margin: -5px;
+}
+
+.btnBar {
+    justify-content: center;
+    background-color: deeppink;
+}
+
+ */
+
+ * {
+    margin: 10px;
+    background-color: rgb(247, 220, 222);
+  }
+  
+  .links {
+    text-align: end;
+  }
+  
+  .myCol {
+    text-align: center;
+    background-color: pink;
+    border: solid;
+    border-color: white;
+    display: inherit;
+    align-items: center;
+  }
+  
+  p {
+    color: deeppink;
+    margin: 10px;
+    font-size: 18px;
+  }
+  
+  img {
+    width: 85%;
+    align-content: space-around;
+    max-height: max-content;
+  }
+  
+  .row {
+    color: deeppink;
+    justify-content: center;
+  }
+  
+  .quoteCls {
+    margin: 0px;
+  }
+  
+  .inputQuote {
+    width: 65%;
+  }
+  
+  .btnBar {
+    position: relative;
+    justify-content: center;
+    background-color: deeppink;
+    overflow: hidden; /* Prevent stars from overflowing */
+  }
+  
+  /* Define the star shape using CSS */
+  .btnBar::before,
+  .btnBar::after {
+    content: "★"; /* Unicode character for a star */ 
+    color: pink; /* Set the star color to pink */
+    position: absolute;
+    animation: star-twinkle 2s infinite;
+  }
+  
+  /* Additional stars using ::before and ::after pseudo-elements */
+  .btnBar::before {
+    top: 60%;
+    right: 7px;
+    font-size: 10px;
+  }
+  
+  .btnBar::after {
+    top: 10%;
+    right: 30px;
+    font-size: 25px;
+  }
+  
+  /* Animate the stars to twinkle */
+  @keyframes star-twinkle {
+    0%, 100% {
+      opacity: 0; /* Stars are not visible */
+      transform: scale(0); /* Stars are tiny */
+    }
+    50% {
+      opacity: 1; /* Stars are fully visible */
+      transform: scale(1.2); /* Stars are normal size */
+    }
+  }
+  

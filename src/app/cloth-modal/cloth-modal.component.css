@@ -1,0 +1,52 @@
+.separator-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.separator-table th,
+.separator-table td {
+    border: 1px solid pink;
+    /* Add a border around each cell */
+    padding: 8px;
+    text-align: left;
+}
+
+.separator-table th {
+    background-color: rgb(252, 227, 231);
+    /* Optional: Add background color to header row */
+}
+
+.text-area {
+    width: 40%;
+    float: right;
+    margin: 5%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.image-container {
+    width: 40%;
+    justify-content: center;
+    float: left;
+    margin: 5%;
+  
+}
+
+.modal-container {
+    background-color: pink;
+    display: flex; /* Use flexbox for vertical centering */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    margin-left: 25%;
+}
+
+.modal-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+

@@ -1,0 +1,7 @@
+<div class="links"><app-navbar></app-navbar></div>
+<div class="row">
+    <div class="col-2 myCol" *ngFor="let cloth of cloths ; let i = index"  [ngClass]="{ 'no-hover': isClothOpen(i) }" >
+      <!-- Pass the selected image URL to the clothsModal() function -->
+      <img [src]="cloth.imgurl" class="enlarge-img" (click)="clothsModal(cloth.imgurl, cloth.name, cloth.size, cloth.price, i)">
+    </div>
+</div>
